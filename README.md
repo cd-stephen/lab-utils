@@ -36,7 +36,12 @@ sas2flash.efi -o -f 9207-8.bin -biosall mptsas2.rom   ## flash all cards with fi
 
 
 2. SM x10-srl-f https://www.supermicro.com/en/products/motherboard/X10SRL-F
-note: must be done in legacy bios mode. bifercate on port 1 - pcie slot 2/3
+note: 
+- must be done in legacy bios mode. bifercate on port 1 - pcie slot 2/3
+- intel x2apic enabled
+- intel vt-d disabled
+- bios uefi
+
 copy:
 - Extract downloaded zip file       -> firmware/sm/x10-srl-f/
 - boot to DOS
