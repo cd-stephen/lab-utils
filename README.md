@@ -22,8 +22,8 @@ mptsas2.rom                         -> firmware/lsi/
 ```shell
 sas2flash.efi -listall                                ## list cards
 sas2flash.efi -c 0                                    ## select card 0
-sas2flash.efi -c 0 -o -e 6                                 ## erase the rom of card 0 - do this to also remove the bootloader rom
-sas2flash.efi -c 0 -o -f 9207-8.bin                        ## flash selected card with firmware, without adding the boot rom. (faster startup)
+sas2flash.efi -c 0 -o -e 6                            ## erase the rom of card 0 - do this to also remove the bootloader rom
+sas2flash.efi -c 0 -o -f 9207-8.bin                   ## flash selected card with firmware, without adding the boot rom. (faster startup)
 sas2flash.efi -o -f 9207-8.bin -b mptsas2.rom         ## flash selected card with firmware adding the boot rom.
 
 
