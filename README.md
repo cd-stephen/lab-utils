@@ -41,6 +41,9 @@ note:
 - intel x2apic enabled
 - intel vt-d disabled
 - bios uefi
+- SATA config disabled
+- sSATA config enabled, set to solid state.
+- watchdog disabled
 
 copy:
 - Extract downloaded zip file       -> firmware/sm/x10-srl-f/
